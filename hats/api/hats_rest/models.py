@@ -23,8 +23,13 @@ class Hat(models.Model):
     color = models.CharField(max_length=200)
     picture_url = models.URLField(max_length=200)
 
-    conference = models.ForeignKey(
+    location = models.ForeignKey(
         LocationVO,
         related_name="hats",
         on_delete=models.CASCADE,
     )
+def __str__(self):
+        return self.name
+
+def get_api_url(self):
+    return reverse("api_show_hat", kwargs={"pk": self.pk})
