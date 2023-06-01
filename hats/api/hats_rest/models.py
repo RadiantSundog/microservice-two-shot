@@ -10,11 +10,9 @@ class BinVO(models.Model):
     bin_size = models.PositiveSmallIntegerField()
 
 
-
 class LocationVO(models.Model):
     closet_name = models.CharField(max_length=200)
-    section_number = models.PositiveSmallIntegerField()
-    shelf_number = models.PositiveSmallIntegerField()
+    import_href = models.CharField(max_length=100)
 
 
 class Hat(models.Model):
