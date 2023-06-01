@@ -3,7 +3,7 @@
 Team:
 
 * Alex Levero - Shoes
-* Person 2 - Which microservice?
+* Brian Johnson - Hats
 
 ## Design
 

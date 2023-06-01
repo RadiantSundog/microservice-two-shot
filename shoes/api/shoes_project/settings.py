@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "shoes.apps.ShoesConfig",
+    "shoes_rest.apps.ShoesApiConfig",
     "corsheaders",
     'django.contrib.admin',
     'django.contrib.auth',
