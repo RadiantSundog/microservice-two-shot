@@ -2,8 +2,8 @@
 
 Team:
 
-* Person 1 - Which microservice? Alex Levero
-* Person 2 - Which microservice? Brian Johnson
+* Alex Levero Shoes
+* Brian Johnson Hats
 
 ## Design
 
