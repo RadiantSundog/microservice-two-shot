@@ -17,6 +17,7 @@ async function loadShoes() {
         <App shoes={data.shoes} />
       </React.StrictMode>
     );
+    console.log(data);
   } else {
     console.error(response);
   }

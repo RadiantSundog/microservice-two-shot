@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './MainPage';
 import Nav from './Nav';
 import ShoesList from './ShoesList';
+import ShoeForm from './ShoeForm';
 
 function App(props) {
   if (props.shoes === undefined) {
@@ -14,6 +15,7 @@ function App(props) {
         <Routes>
           <Route index element={<MainPage />} />
           <Route path="shoes" element={<ShoesList shoes={props.shoes}/>} />
+          <Route path="shoes/new" element={<ShoeForm />} />
         </Routes>
       </div>
     </BrowserRouter>

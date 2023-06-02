@@ -25,6 +25,7 @@ def poll():
             for bin in content["bins"]:
                 BinVO.objects.update_or_create(
                     import_href=bin["href"],
+                    closet_name=bin["closet_name"],
                     defaults={"closet_name": bin["closet_name"]},
                 )
             pass
