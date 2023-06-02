@@ -9,10 +9,18 @@ Team:
 
 ## Shoes microservice
 
-Explain your models and integration with the wardrobe
-microservice, here.
+Started with RESTful APIs,
+Created models,
+Created views,
+Configured URLs,
+Added React functionality,
+Added create functionality
 
 ## Hats microservice
 
-Explain your models and integration with the wardrobe
-microservice, here.
+Started with RESTful APIs,
+Created models,
+Created views,
+Configured URLs,
+Added React functionality,
+Added create functionality
