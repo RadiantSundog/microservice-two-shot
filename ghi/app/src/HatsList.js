@@ -6,16 +6,22 @@ function HatsList(props) {
         <table className="table table-striped">
             <thead>
                 <tr>
-                    <th>Name</th>
                     <th>Hats</th>
+                    <th>Details</th>
+                    <th>Fabric</th>
+                    <th>Id</th>
+                    <th>Closet name</th>
                 </tr>
             </thead>
             <tbody>
                 {props.hats.map(hat => {
                     return (
-                        <tr key={hat.href}>
-                            <td>{ hat.shelf_name }</td>
-                            <td>{ hat.location }</td>
+                        <tr key={hat.id}>
+                            <td>{ hat.style_name }</td>
+                            <td>{ hat.color }</td>
+                            <td>{ hat.fabric }</td>
+                            <td>{ hat.id }</td>
+                            <td>{ hat.closet_name }</td>
                         </tr>
                     );
                 })}

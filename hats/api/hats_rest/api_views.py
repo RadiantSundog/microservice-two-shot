@@ -16,10 +16,23 @@ class HatListEncoder(ModelEncoder):
     properties = [
         "style_name",
         "id",
+        "color",
+        "fabric",
+        "location",
+
+
+
     ]
+    encoders = {
+        "closet_name": LocationVODetailEncoder(),
+    }
 
     def get_extra_data(self, o):
-        return {"location": o.location.import_href}
+        return {
+            "closet_name": o.location.closet_name,
+            "location": o.location.import_href,
+            }
+
 
 
 class HatDetailEncoder(ModelEncoder):

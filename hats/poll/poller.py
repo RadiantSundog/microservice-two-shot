@@ -27,6 +27,7 @@ def poll():
             for location in content["locations"]:
                 LocationVO.objects.update_or_create(
                     import_href=location["href"],
+                    closet_name=location["closet_name"],
                     defaults={"closet_name": location["closet_name"]},
                 )
 
