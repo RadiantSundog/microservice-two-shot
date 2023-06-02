@@ -10,7 +10,6 @@ function App(props) {
   if (props.hats === undefined) {
     return null;
   }
-function App(props) {
   if (props.shoes === undefined) {
     return null;
   }
